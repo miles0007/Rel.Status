@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <title>START</title>
+    <style type="text/css">
+        body{
+        background-color: PINK; /*<!-----------#819FF7--------!>*/
+        }
+
+        center{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        }
+/*        button{
+            width: 50%;
+            padding: 7px 18px;
+            background: white;
+            font-color: white;
+            border: 1px;
+        }*/
+        input[type=text]{
+            padding: 7px 35px;
+            background: white;
+            font-color: white;
+            border: 1px;
+        }
+        p{
+        align-text: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <center>
+        <form action="/save" method="post">
+            <h1>Relationship Status</h1><br><br>
+            <input type="text" name="f_name" placeholder="Your Name" class="in" required><br><br>
+            <input type="text" name="s_name" placeholder="Other Name" class="in" required><br><br>
+            <button class="btn btn-primary my-2">Check</button>
+        </form>
+    </center>
+</body>
+</html>

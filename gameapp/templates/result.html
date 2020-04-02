@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <style type="text/css">
+		body{
+			position: absolute;
+			left: 30%;
+			bottom : 10%;
+		}
+		.img{
+		border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+<center>
+{% if opt == 'Affection'  %}
+        <h2>Affection</h2>
+        <img class="img" src="{% static 'img/affection.jpg' %}" height="400">
+        <p><em><b>Most carring Person</b></em></p>
+{% elif opt == 'Enemy'  %}
+        <h2>Enemy</h2>
+        <img class="img" src="{% static 'img/fight.jpg' %}" height="400">
+        <p><em><b>Lets Fight</b></em></p>
+{% elif opt == 'Love'  %}
+        <h2>Love</h2>
+        <img class="img" src="{% static 'img/love.jpg' %}" height="400">
+        <p><em><b>Closer than Expected</b></em></p>
+{% elif opt == 'Friends'  %}
+        <h2>Friends</h2>
+        <img class="img" src="{% static 'img/friends.jpg' %}" height="400">
+        <p><em><b>You're Close Friends</b></em></p>
+{% elif opt == 'Marriage'  %}
+        <h2>Marriage</h2>
+        <img class="img" src="{% static 'img/marriage.jpg' %}" height="400">
+        <p><em><b>Share your Life</b></em></p>
+{% elif opt == 'Siblings'  %}
+        <h2>Siblings</h2>
+        <img class="img" src="{% static 'img/siblings.jpg' %}" height="400">
+        <p><em><b>Most Adorable one</b></em></p>
+{% elif opt == 'none'  %}
+        <h3><pre>All elements are cancelled Please add another name to get result..</pre></h3>
+{% endif %}
+</center>
+
+</body>
+</html>
