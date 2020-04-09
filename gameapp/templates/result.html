@@ -1,51 +1,142 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta charset="UTF-8">
-    <title>Result</title>
-    <style type="text/css">
-		body{
-			position: absolute;
-			left: 30%;
-			bottom : 10%;
-		}
-		.img{
-		border-radius: 50%;
-		}
-	</style>
-</head>
+<html>
+<title>Rel.stats</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg1 {
+  background-image: url({% static 'img/marriage.jpg' %});
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg2 {
+  background-image: url({% static 'img/fight.jpg' %});
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg3 {
+  background-image: url({% static 'img/love.jpg' %});
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg4 {
+  background-image: url({% static 'img/friends.jpg' %});
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg5 {
+  background-image: url({% static 'img/affection.jpg' %});
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg6 {
+  background-image: url({% static 'img/siblings.jpg' %});
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg7 {
+  background-image: url({% static 'img/13779.jpg' %});
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
 <body>
-<center>
 {% if opt == 'Affection'  %}
-        <h2>Affection</h2>
-        <img class="img" src="{% static 'img/affection.jpg' %}" height="400">
-        <p><em><b>Most carring Person</b></em></p>
+    <div class="bgimg1 w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+        Rel.Stats
+        <p class="mt-5 mb-3 text-muted">&copy; miles007</p>
+    </div>
+    <div class="w3-display-middle">
+        <h1 class="w3-jumbo w3-animate-top">Congrats!</h1>
+        <hr class="w3-border-grey" style="margin:auto;width:40%">
+        <p class="w3-large w3-center">Most carring Person</p>
+    </div>
+</div>
 {% elif opt == 'Enemy'  %}
-        <h2>Enemy</h2>
-        <img class="img" src="{% static 'img/fight.jpg' %}" height="400">
-        <p><em><b>Lets Fight</b></em></p>
+    <div class="bgimg2 w3-display-container w3-animate-opacity w3-text-white">
+        <div class="w3-display-topleft w3-padding-large w3-xlarge">
+            Rel.Stats
+            <p class="mt-5 mb-3 text-muted">&copy; miles007</p>
+        </div>
+        <div class="w3-display-middle">
+            <h1 class="w3-jumbo w3-animate-top">Enemy</h1>
+            <hr class="w3-border-grey" style="margin:auto;width:40%">
+            <p class="w3-large w3-center">Lets Fight</p>
+        </div>
+    </div>
 {% elif opt == 'Love'  %}
-        <h2>Love</h2>
-        <img class="img" src="{% static 'img/love.jpg' %}" height="400">
-        <p><em><b>Closer than Expected</b></em></p>
+    <div class="bgimg3 w3-display-container w3-animate-opacity w3-text-white">
+        <div class="w3-display-topleft w3-padding-large w3-xlarge">
+            Rel.Stats
+            <p class="mt-5 mb-3 text-muted">&copy; miles007</p>
+        </div>
+        <div class="w3-display-middle">
+            <h1 class="w3-jumbo w3-animate-top">Happy</h1>
+            <hr class="w3-border-grey" style="margin:auto;width:40%">
+            <p class="w3-large w3-center">Closer than Expectedt</p>
+        </div>
+    </div>
 {% elif opt == 'Friends'  %}
-        <h2>Friends</h2>
-        <img class="img" src="{% static 'img/friends.jpg' %}" height="400">
-        <p><em><b>You're Close Friends</b></em></p>
+    <div class="bgimg4 w3-display-container w3-animate-opacity w3-text-dark">
+        <div class="w3-display-topleft w3-padding-large w3-xlarge">
+            Rel.Stats
+            <p class="mt-5 mb-3 text-muted">&copy; miles007</p>
+        </div>
+        <div class="w3-display-middle">
+            <h1 class="w3-jumbo w3-animate-top">Dudes</h1>
+            <hr class="w3-border-grey" style="margin:auto;width:40%">
+            <p class="w3-large w3-center">You're Close Friends</p>
+        </div>
+    </div>
 {% elif opt == 'Marriage'  %}
-        <h2>Marriage</h2>
-        <img class="img" src="{% static 'img/marriage.jpg' %}" height="400">
-        <p><em><b>Share your Life</b></em></p>
+    <div class="bgimg5 w3-display-container w3-animate-opacity w3-text-white">
+        <div class="w3-display-topleft w3-padding-large w3-xlarge">
+            Rel.Stats
+            <p class="mt-5 mb-3 text-muted">&copy; miles007</p>
+        </div>
+        <div class="w3-display-middle">
+            <h1 class="w3-jumbo w3-animate-top">Made of each other</h1>
+            <hr class="w3-border-grey" style="margin:auto;width:40%">
+            <p class="w3-large w3-center">Share your Life</p>
+        </div>
+    </div>
 {% elif opt == 'Siblings'  %}
-        <h2>Siblings</h2>
-        <img class="img" src="{% static 'img/siblings.jpg' %}" height="400">
-        <p><em><b>Most Adorable one</b></em></p>
-{% elif opt == 'none'  %}
-        <h3><pre>All elements are cancelled Please add another name to get result..</pre></h3>
+    <div class="bgimg6 w3-display-container w3-animate-opacity w3-text-white">
+        <div class="w3-display-topleft w3-padding-large w3-xlarge">
+            Rel.Stats
+            <p class="mt-5 mb-3 text-muted">&copy; miles007</p>
+        </div>
+        <div class="w3-display-middle">
+            <h1 class="w3-jumbo w3-animate-top">Siblings</h1>
+            <hr class="w3-border-grey" style="margin:auto;width:40%">
+            <p class="w3-large w3-center">You were cat and mouse</p>
+        </div>
+    </div>
+{% else %}
+      <div class="bgimg7 w3-display-container w3-animate-opacity w3-text-white">
+        <div class="w3-display-topleft w3-padding-large w3-xlarge">
+            Rel.Stats
+            <p class="mt-5 mb-3 text-muted">&copy; miles007</p>
+        </div>
+        <div class="w3-display-middle">
+            <h1 class="w3-jumbo w3-animate-top">Error 404</h1>
+            <hr class="w3-border-grey" style="margin:auto;width:40%">
+            <p class="w3-large w3-center">Try another name..</p>
+        </div>
+      </div>
 {% endif %}
-</center>
-
 </body>
 </html>

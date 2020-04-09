@@ -7,7 +7,7 @@ def add(request):
     return render(request,'start.html')
 @csrf_exempt
 def sec(request):
-    global opt
+    opt = ["Friends", "Love", "Affection", "Marriage", "Enemy", "Siblings"]
     if request.method == "POST":
         name = request.POST['f_name']
         second = request.POST['s_name']
@@ -45,6 +45,7 @@ def sec(request):
             opt = 'none'
         a = cls(name1=html_f,name2=html_s,result=opt)
         a.save()
+        print(opt)
     return render(request,'result.html',{'opt':opt})
 
 
